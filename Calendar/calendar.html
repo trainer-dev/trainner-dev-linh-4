@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calendar</title>
+    <link rel="stylesheet" type="text/css"  href="css.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css"
+          integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="calendar">
+            <div class="month">
+                <ul>
+                    <li><a href="#" class="previous round" onclick="previous()" id="prev">&#8249;</a></li>
+                    <li><p id="mon"></p></li>
+                    <li><a href="#" class="next round" onclick="next()" id="next">&#8250;</a></li>
+                </ul>
+            </div>
+            <div class="table">
+                <table class="table table-bordered table-responsive-sm" id="calendar">
+                    <thead>
+                    <tr>
+                        <th>Su</th>
+                        <th>Mo</th>
+                        <th>Tu</th>
+                        <th>We</th>
+                        <th>Th</th>
+                        <th>Fr</th>
+                        <th>Sa</th>
+                    </tr>
+                    </thead>
+
+                    <tbody id="calendar-body">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script language="JavaScript" src="Cal.js"></script>
+</body>
+</html>

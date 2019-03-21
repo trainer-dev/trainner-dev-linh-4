@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Caculator</title>
+    <link rel="stylesheet" type="text/css"  href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="calculator-keys">
+            <FORM method=post>
+            <table border="0.5">
+                <tr>
+                    <INPUT size=40 maxlength=40 class="calculator-screen">
+                    <p id="p"></p>
+                </tr>
+                <tr>
+                    <th><input type="button" value="m+" onclick="mplus()" ></th>
+                    <th><input type="button" value="m-" onclick="mm()" ></th>
+                    <th><input type="button" value="mc" onclick="mclr()" ></th>
+                    <th><input type=button value=" / " onClick="Fnc(0,0,'/')"></th>
+                </tr>
+
+                <tr>
+                    <td><input type=button value=" 7 " onClick="Add(0,0,'7')"></td>
+                    <td><input type=button value=" 8 " onClick="Add(0,0,'8')"></td>
+                    <td><input type=button value=" 9 " onClick="Add(0,0,'9')"></td>
+                    <td><input type=button value=" X " onClick="Fnc(0,0,'*')"></td>
+                </tr>
+                <tr>
+                    <td><input type=button value=" 4 " onClick="Add(0,0,'4')"></td>
+                    <td><input type=button value=" 5 " onClick="Add(0,0,'5')"></td>
+                    <td><input type=button value=" 6 " onClick="Add(0,0,'6')"></td>
+                    <td><input type=button value=" - " onClick="Fnc(0,0,'-')"></td>
+                </tr>
+                <tr>
+                    <td><input type=button value=" 1 " onClick="Add(0,0,'1')"></td>
+                    <td><input type=button value=" 2 " onClick="Add(0,0,'2')"></td>
+                    <td><input type=button value=" 3 " onClick="Add(0,0,'3')"></td>
+                    <td><input type=button value=" + " onClick="Fnc(0,0,'+')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="0" onclick="Add(0,0,'0')"></td>
+                    <td><input type=button value=" . " onClick="Res(0,0,'.')"></td>
+                    <td><input type=button value=" C " onClick="Clr(0,0)"></td>
+                    <td><input type=button value=" = " onClick="Res(0,0)" id="equal"></td>
+                </tr>
+            </table>
+            </FORM>
+        </div>
+    </div>
+
+    <script>
+        // document.forms[0].elements[3].value = "123";
+    </script>
+    <script language="JavaScript" src="Cal.js"></script>
+</body>
+</html>
